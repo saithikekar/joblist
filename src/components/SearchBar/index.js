@@ -51,7 +51,7 @@ export default (props) =>{
             </Select>
             <Button 
                 variant="contained" 
-                color="primary" 
+                color="#03a9f4" 
                 disabledElevation
                 onClick={search}    
             >

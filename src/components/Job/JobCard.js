@@ -14,7 +14,7 @@ const useStyles=makeStyles((theme)=>({
     },
     companyName:{
         fontSize:"13.5px",
-        backgroundColor:theme.palette.primary.main,
+        backgroundColor:"#03a9f4",
         padding:theme.spacing(0.75),
         borderRadius:"5px",
         display:"inline-block",
@@ -27,7 +27,7 @@ const useStyles=makeStyles((theme)=>({
         borderRadius:"5px",
         cursor:"pointer",
         fontWeight:600,
-        backgroundColor:theme.palette.secondary.main,
+        backgroundColor:"#263238",
         color:"#fff",
     },
 }));

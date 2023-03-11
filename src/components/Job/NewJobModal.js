@@ -87,7 +87,7 @@ export default (props) =>{
     }
 
     const classes=useStyles();
-    const skills=["React","Node","Firebase","Express","MongoDB","Flutter","Go","Vue"]
+    const skills=["Driving","Organization","Management","Technical","Customer Engagement","Microsoft Excel", "Construction"]
     return(
         <Dialog open={props.openModal} fullWidth>
             <DialogTitle>
@@ -114,7 +114,7 @@ export default (props) =>{
                         <FilledInput onChange={handleChange} autoComplete="off" placeholder="Comapny Name*" name="companyName" value={jobDetails.companyName} disableUnderline fullWidth />
                     </Grid>
                     <Grid item xs={6}>
-                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Company URL*" disableUnderline fullWidth name="companyUrl" value={jobDetails.companyUrl}/>
+                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Location*" disableUnderline fullWidth name="companyUrl" value={jobDetails.companyUrl}/>
                     </Grid>
                     <Grid item xs={6}>
                         <Select onChange={handleChange} fullWidth disableUnderline variant="filled"  name="location" value={jobDetails.location}>
