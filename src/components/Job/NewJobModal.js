@@ -87,12 +87,12 @@ export default (props) =>{
     }
 
     const classes=useStyles();
-    const skills=["Driving","Organization","Management","Technical","Customer Engagement","Microsoft Excel", "Construction"]
+    const skills=["Blood","Groceries","Funds","Medical equipment","Books"];
     return(
         <Dialog open={props.openModal} fullWidth>
             <DialogTitle>
                 <Box display="flex" justifyContent="space-between" alignItems="center">
-                    Post a Job
+                    Post a requirement
                     <IconButton onClick={closeModal}>
                         <CloseIcon />
                     </IconButton>
@@ -101,32 +101,48 @@ export default (props) =>{
             <DialogContent>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
-                        <FilledInput onChange={handleChange} autoComplete="off" name="title" value={jobDetails.title} placeholder="Job Title*" disableUnderline fullWidth />
+                        <FilledInput onChange={handleChange} autoComplete="off" name="title" value={jobDetails.title} placeholder="Title*" disableUnderline fullWidth />
                     </Grid>
                     <Grid item xs={6}>
                         <Select onChange={handleChange} fullWidth disableUnderline variant="filled" name="type" value={jobDetails.type}>
-                            <MenuItem value="Full Time">Full Time</MenuItem>
-                            <MenuItem value="Part Time">Part Time</MenuItem>
-                            <MenuItem value="Contract">Contract</MenuItem>
+                        <MenuItem value="Full Time">Mumbai</MenuItem>
+                <MenuItem value="Part Time">Pune</MenuItem>
+                <MenuItem value="Part Time">Thane</MenuItem>
+                <MenuItem value="Part Time">Raigad</MenuItem>
+                <MenuItem value="Part Time">Jalgaon</MenuItem>
+                <MenuItem value="Part Time">Solapur</MenuItem>
+                <MenuItem value="Part Time">Rajapur</MenuItem>
+                <MenuItem value="Part Time">Ratnagiri</MenuItem>
+                <MenuItem value="Part Time">Kalyan</MenuItem>
+                <MenuItem value="Part Time">Badlapur</MenuItem>
+                <MenuItem value="Part Time">Dholakpur</MenuItem>
+                <MenuItem value="Part Time">Nagpur</MenuItem>
+                <MenuItem value="Part Time">Navi Mumbai</MenuItem>
+                <MenuItem value="Part Time">Dharavee</MenuItem>
+                <MenuItem value="Part Time">Vasai</MenuItem>
+                {/* <MenuItem value="Part Time"></MenuItem> */}
+                {/* <MenuItem value="Part Time">Pune</MenuItem> */}
+                {/* <MenuItem value="Part Time">Pune</MenuItem> */}
+                <MenuItem value="Contract">Palghar</MenuItem>
                         </Select>
                     </Grid>
                     <Grid item xs={6}>
-                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Comapny Name*" name="companyName" value={jobDetails.companyName} disableUnderline fullWidth />
+                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="NGO Name*" name="companyName" value={jobDetails.companyName} disableUnderline fullWidth />
                     </Grid>
                     <Grid item xs={6}>
                         <FilledInput onChange={handleChange} autoComplete="off" placeholder="Location*" disableUnderline fullWidth name="companyUrl" value={jobDetails.companyUrl}/>
                     </Grid>
                     <Grid item xs={6}>
                         <Select onChange={handleChange} fullWidth disableUnderline variant="filled"  name="location" value={jobDetails.location}>
-                            <MenuItem value="Remote">Remote</MenuItem>
-                            <MenuItem value="In-office">In-office</MenuItem>
+                            <MenuItem value="Remote">Need Donation</MenuItem>
+                            <MenuItem value="In-office">Need Volunteer</MenuItem>
                         </Select>
                     </Grid>
                     <Grid item xs={6}>
-                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Job Link with https*" disableUnderline fullWidth name="link" value={jobDetails.link}/>
+                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="NGO ID*" disableUnderline fullWidth name="link" value={jobDetails.link}/>
                     </Grid>
                     <Grid item xs={12}>
-                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Job Description*" disableUnderline fullWidth multiline rows={4} name="description" value={jobDetails.description}/>
+                        <FilledInput onChange={handleChange} autoComplete="off" placeholder="Description*" disableUnderline fullWidth multiline rows={4} name="description" value={jobDetails.description}/>
                     </Grid>
                 </Grid>
                 <Box mt={2}>
@@ -155,7 +171,7 @@ export default (props) =>{
                     >
                         {loading ? (<CircularProgress color="secondary" size={22} />
                         ) : (   
-                        "Post Job"
+                        "Post"
                         )}
                     </Button>
                 </Box>

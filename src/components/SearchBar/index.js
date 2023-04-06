@@ -41,13 +41,39 @@ export default (props) =>{
     return (
         <Box p={2} mt={-5} mb={2} className={classes.wrapper}>
             <Select onChange={handleChange} value={jobSearch.type} name="type" disableUnderline variant="filled" >
-                <MenuItem value="Full Time">Full Time</MenuItem>
-                <MenuItem value="Part Time">Part Time</MenuItem>
-                <MenuItem value="Contract">Contract</MenuItem>
+                <MenuItem value="Full Time">Mumbai</MenuItem>
+                <MenuItem value="Part Time">Pune</MenuItem>
+                <MenuItem value="Part Time">Thane</MenuItem>
+                <MenuItem value="Part Time">Raigad</MenuItem>
+                <MenuItem value="Part Time">Jalgaon</MenuItem>
+                <MenuItem value="Part Time">Solapur</MenuItem> 
+                <MenuItem value="Part Time">Rajapur</MenuItem>
+                <MenuItem value="Part Time">Ratnagiri</MenuItem>
+                <MenuItem value="Part Time">Kalyan</MenuItem>
+                <MenuItem value="Part Time">Badlapur</MenuItem>
+                <MenuItem value="Part Time">Dholakpur</MenuItem>
+                <MenuItem value="Part Time">Nagpur</MenuItem>
+                <MenuItem value="Part Time">Navi Mumbai</MenuItem>
+                <MenuItem value="Part Time">Dharavee</MenuItem>
+                <MenuItem value="Part Time">Vasai</MenuItem>
+                {/* <MenuItem value="Part Time"></MenuItem> */}
+                {/* <MenuItem value="Part Time">Pune</MenuItem> */}
+                {/* <MenuItem value="Part Time">Pune</MenuItem>0 0 */}
+                <MenuItem value="Contract">Palghar</MenuItem>
             </Select>
             <Select onChange={handleChange} value={jobSearch.location} name="location" disableUnderline variant="filled" >
-                <MenuItem value="Remote">Remote</MenuItem>
-                <MenuItem value="In-office">In-office</MenuItem>
+                <MenuItem value="Remote">Astitva</MenuItem>
+                <MenuItem value="In-office">Aai Care </MenuItem>
+                <MenuItem value="In-office">Apnalaya </MenuItem>
+                <MenuItem value="In-office">Child Vision Foundation </MenuItem>
+                <MenuItem value="In-office">OXFAM </MenuItem>
+                <MenuItem value="In-office">GreenPeace Foundation </MenuItem>
+                <MenuItem value="In-office">Goorj </MenuItem>
+                <MenuItem value="In-office">Nazar </MenuItem>
+                <MenuItem value="In-office">Ves NGO </MenuItem>
+                <MenuItem value="In-office">NAYAN foundation </MenuItem>
+                <MenuItem value="In-office">Zubaan Teeth Donation Camp </MenuItem>
+                <MenuItem value="In-office">Naakandanis</MenuItem>
             </Select>
             <Button 
                 variant="contained" 
